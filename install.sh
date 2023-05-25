@@ -5,5 +5,5 @@ curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/jammy.tailscale-keyring.list
 sudo apt update
 sudo upt upgrade -y
 sudo apt install tailscale -y
-tailscale up
+sudo tailscale up --qr
 tailscale ip -4
