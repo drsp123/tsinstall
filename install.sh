@@ -4,6 +4,6 @@ curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/jammy.noarmor.gpg | sudo tee
 curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/jammy.tailscale-keyring.list | sudo tee /etc/apt/sources.list.d/tailscale.list
 sudo apt update
 sudo upt upgrade -y
-sudo apt-get install tailscale
+sudo apt install tailscale -y
 tailscale up
 tailscale ip -4
